@@ -1,9 +1,17 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>H‘s world</title>
-        <link>https://pasthl.github.io/--buildDrafts/</link>
+        <link>http://example.org/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language>
-            <atom:link href="https://pasthl.github.io/--buildDrafts/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 17 Jun 2023 18:29:49 &#43;0800</lastBuildDate>
+            <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>First_post</title>
+    <link>http://example.org/posts/first_post/</link>
+    <pubDate>Sat, 17 Jun 2023 18:29:49 &#43;0800</pubDate>
+    <author>小H</author>
+    <guid>http://example.org/posts/first_post/</guid>
+    <description><![CDATA[Halo world! ]]></description>
+</item>
+</channel>
 </rss>
