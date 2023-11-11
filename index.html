@@ -1,77 +1,398 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-    <head>
-	<meta name="generator" content="Hugo 0.113.0">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="noodp" />
-        <title>H‘s world</title><meta name="Description" content="This is my cool site"><meta property="og:title" content="H‘s world" />
-<meta property="og:description" content="This is my cool site" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://example.org/" /><meta property="og:site_name" content="My cool site" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="H‘s world"/>
-<meta name="twitter:description" content="This is my cool site"/>
-<meta name="application-name" content="My cool site">
-<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="H‘s world">
-    <link rel="feed" href="/index.xml" type="application/rss+xml" title="H‘s world"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
-    {
-        "@context": "http://schema.org",
-        "@type": "WebSite",
-        "url": "http:\/\/example.org\/","inLanguage": "zh-CN","author": {
-                "@type": "Person",
-                "name": "小H"
-            },"description": "This is my cool site","name": "H‘s world"
-    }
-    </script></head>
-    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel = "stylesheet" href = "style.css" />
+    <link rel = "stylesheet" href = "mediaqueries.css" />
 
-        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
-    <div class="header-wrapper">
-        <div class="header-title">
-            <a href="/" title="H‘s world">My cool site</a>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jingyu Hua</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#Experience">Experience</a></li>
+                <li><a href = "#Projects">Projects</a></li> 
+                <li><a href = "#Contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="menu">
-            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-                </a></div>
-        </div>
-    </div>
-</header><header class="mobile" id="header-mobile">
-    <div class="header-container">
-        <div class="header-wrapper">
-            <div class="header-title">
-                <a href="/" title="H‘s world">My cool site</a>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jingyu Hua</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="menu-toggle" id="menu-toggle-mobile">
-                <span></span><span></span><span></span>
+            <div class="menu-links">
+                <li><a href = "#about"  onclick="toggleMenu()">About</a></li>
+                <li><a href = "#Experience"  onclick="toggleMenu()">Experience</a></li>
+                <li><a href = "#Projects"  onclick="toggleMenu()">Projects</a></li> 
+                <li><a href = "#Contact"  onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
-        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
-                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
-            </a></div>
-    </div>
-</header><main class="main">
-                <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-subtitle"><div id="id-1" class="typeit"></div></div><div class="links"></div></div>
-<article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/posts/first_post/">Update blog</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>小H</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-06-17">2023-06-17</time></span></div><div class="content">上传博客的步骤 Hugo server -D hugo cd public Git add . git commit -m &lsquo;&lsquo;push&rsquo;&rsquo; git push</div><div class="post-footer">
-        <a href="/posts/first_post/">Read More</a></div>
-</article></div></div>
-            </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.113.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">小H</a></span></div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpg" alt="Annie profile picture">             
         </div>
-    </footer></div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Jingyu Hua</h1>
+            <p class="section__text__p2">Live in moon</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.docx')">
+                DownLoad CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id = "social-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="my linkedin profile" 
+                class ="icon" 
+                onclick="location.href='https://linkedin.com/'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="my github profile" 
+                class ="icon" 
+                onclick="location.href='https://github.com/'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class ="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./assets/about.png"
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                    <img 
+                    src="./assets/experience.png"
+                    alt="Experience icon"
+                    class="icon"
+                    />
+                    <h3>Experience</h3>
+                    <p>20+ years <br />Single Dog</p>
+                </div>
+                <div class="details-container">
+                    <img 
+                    src="./assets/education.png"
+                    alt="Education icon"
+                    class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>B.Eng.  Bachelors Degree<br />M.Eng Masters Degree</p>
+                </div>
+              </div>
+              <div class="text-container">
+                <p>Because I could not stop for Death,
 
-        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
-                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
-            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
-                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
-            </a>
-        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@8.6.0/dist/index.umd.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"data":{"id-1":"This is my cool site"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+                    He kindly stopped for me;
+                    
+                    The carriage held but just ourselves
+                    
+                    And Immortality. 
+                </p>
+              </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/down-arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#Experience'"
+        />
+    </section>
+
+    <section id="Experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Single Dog</h2>
+                <div class="article-container">
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Develop Skills</h2>
+                <div class="article-container">
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img 
+                        src="./assets/check-mark.png" 
+                        alt="Experience"
+                        class="icon"
+                        />
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+          </div>
+        </div>
+        <img 
+        src="./assets/down-arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#Projects'"
+        />
+    </section>
+
+    <section id="Projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/project-1.png"
+                    alt="Project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Github
+                   </button>
+                   <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Live Demo
+                   </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/project-2.png"
+                    alt="Project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Github
+                   </button>
+                   <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Live Demo
+                   </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/project-3.png"
+                    alt="Project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">Project Three</h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Github
+                   </button>
+                   <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                    Live Demo
+                   </button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <img 
+        src="./assets/down-arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#Contact'"
+        />
+    </section>
+
+    <section id="Contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:huajingyu8@gmail.com">huajingyu8@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png"
+                alt="=linkedin icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com">linkedin</a></p>
+            </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#Experience">Experience</a></li>
+                    <li><a href = "#Projects">Projects</a></li> 
+                    <li><a href = "#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Jingyu Hua. All is Well.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
