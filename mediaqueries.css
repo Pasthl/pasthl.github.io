@@ -85,9 +85,11 @@
         text-align: center;
     }
     .section__pic-container {
-        width: auto;
-        height: 46vw;
-        justify-content: center;
+        width: 46vw; /* 保持宽度与高度相等 */
+        height: 46vw; /* 使用视口宽度的百分比来保持响应性 */
+        border-radius: 50%; /* 使容器保持圆形 */
+        margin: 0 auto 2rem; /* 水平居中对齐并设置底部边距 */
+        overflow: hidden; /* 隐藏溢出的内容以确保圆形边界 */
     }
     .section__text__p2 {
         font-size: 2rem;
