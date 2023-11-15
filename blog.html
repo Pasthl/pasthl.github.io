@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel = "stylesheet" href="./assets/css/BlogIndex.css" />
+    <link rel = "stylesheet" href="./assets/css/mediaqueries.css" />
+    <link rel = "stylesheet" href="./assets/css/IndexStyle.css" />
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Jingyu Hua</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href = "index.html">Back</a></li>
+                <li><a href = "#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jingyu Hua</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href = "index.html"  onclick="toggleMenu()">Back</a></li>
+                <li><a href = "#Contact"  onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <ul>
+        {% for post in site blogs> %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+            <p>{{ post.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
