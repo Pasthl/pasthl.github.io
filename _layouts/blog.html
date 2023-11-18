@@ -33,15 +33,7 @@
             </div>
         </div>
     </nav>
-    <ul>
-        {% for post in site blogs> %}
-        <li>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-            <p>{{ post.description }}</p>
-        </li>
-        {% endfor %}
-    </ul>
-    
-    <script src="./assets/script/script.js"></script>
+    {{ content }} <!-- Content from blog/index.html will be inserted here -->
+    <script src="./assets/script/script.js"></script> 
 </body>
 </html>

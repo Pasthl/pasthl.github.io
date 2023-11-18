@@ -1,3 +1,5 @@
+baseurl : ""
+
 collections:
   blogs:
     output: true
