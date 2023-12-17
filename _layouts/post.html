@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 确保引入了所有必要的 CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel = "stylesheet" href="/assets/css/BlogIndex.css" />
+    <link rel = "stylesheet" href="/assets/css/mediaqueries.css" />
+    <!-- 其他 CSS 文件 -->
+</head>
+<body>
+        <!-- 导航栏 -->
+        <nav id="desktop-nav">
+            <div class="logo">Jingyu Hua</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href = "/blogindex.html">Back</a></li>
+                    <li><a href = "#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Jingyu Hua</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href = "/blogindex.html"  onclick="toggleMenu()">Back</a></li>
+                    <li><a href = "#Contact"  onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+    <article>
+        {{ content }} <!-- 博文内容将出现在这里 -->
+    </article>
+    <script src="/assets/script/script.js"></script> 
+
+    <footer>
+        <!-- 页脚 -->
+    </footer>
+</body>
+</html>
